@@ -122,7 +122,6 @@ html {
   background: rgba(255, 255, 255, .3);
   left: 109px;
 }
-
 #third_toggle:checked~.toggle_option_slider {
   background: rgba(255, 255, 255, .3);
   left: 215px;
