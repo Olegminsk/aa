@@ -1,0 +1,129 @@
+
+/*    browser-sync start --server --no-notify --files "css/*.css"     */
+
+div {
+  background: #ddd;
+  border: 1px solid #aaa;
+}
+
+blockquote:not(:last-of-type) {
+  padding-bottom: 10px;
+  background: rgba(255, 200, 24, 0.3);
+  overflow: auto;
+}
+
+img {
+  float: left;
+  width: 50px;
+  height: 50px;
+  background: darkorange;
+}
+
+.block1 {
+  display: block;
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+
+.block2 {
+  display: block;
+  padding-left: 100px;
+}
+
+.block3 {
+  display: block;
+  padding-left: 100px;
+}
+
+.blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block11 {
+  width: 50px;
+  height: 50px;
+
+  /*flex: 1, 0 , 50px;*/
+}
+.block33 {
+  padding-left: 60px;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  background: #497dd0;
+}
+
+.wrapper {
+  margin: 100px 0;
+}
+
+.toggle_radio {
+  position: relative;
+  margin: 4px auto;
+  padding: 0 !important;
+  height: 26px;
+  width: 318px;
+  background: rgba(255, 255, 255, .1);
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.toggle_radio>* {
+  float: left;
+}
+
+.toggle_radio input[type=radio] {
+  display: none;
+  /*position: fixed;*/
+}
+
+.toggle_radio label {
+  display: block;
+  width: 100px;
+  height: 20px;
+  margin: 3px 3px;
+  font: 90%/1.618 "Source Sans Pro";
+  text-align: center;
+  color: rgba(255, 255, 255, .9);
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 1;
+  /*background: rgba(0,0,0,.1);*/
+  /*margin: 0 2px;*/
+  /*background: blue;*/
+  /*make it blue*/
+}
+
+.toggle_option_slider {
+  /*display: none;*/
+  /*background: red;*/
+  width: 100px;
+  height: 20px;
+  position: absolute;
+  top: 3px;
+  border-radius: 50px;
+  transition: all .4s ease;
+}
+
+#first_toggle:checked~.toggle_option_slider {
+  background: rgba(255, 255, 255, .3);
+  left: 3px;
+}
+
+#second_toggle:checked~.toggle_option_slider {
+  background: rgba(255, 255, 255, .3);
+  left: 109px;
+}
+
+#third_toggle:checked~.toggle_option_slider {
+  background: rgba(255, 255, 255, .3);
+  left: 215px;
+}
